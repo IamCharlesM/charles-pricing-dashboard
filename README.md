@@ -45,8 +45,8 @@ This dashboard connects to a PostgreSQL database containing scraped product data
 
 - **Product Listing**: Displays all products with valid USD pricing in a responsive table format
 - **Server-Side Pagination**: Efficient pagination with configurable page size (default 50 items per page)
-- **Product Grouping**: Groups products by SKU, showing price ranges when multiple sources exist
-- **Search Functionality**: Real-time case-insensitive search by SKU, product name, brand, or description
+- **Product Grouping**: Groups products by SKU/MPN, collapsing similar items together. If SKU/MPN is not available, products are grouped by product name
+- **Search Functionality**: Server-side case-insensitive search by product name only (search query is sent to the API and database filters results, not client-side filtering)
 - **Sortable Columns**: Click column headers to sort by Price, Discount percentage, Title, or Brand
 - **Multiple Scrapes**: Shows all price points per product from different sources
 - **Pricing Details**: Displays offer price, original price, and calculated discount percentage
@@ -177,7 +177,7 @@ CREATE TABLE raw_llm_extraction (
 **Database Functions** (`lib/db.ts`):
 - `getProducts(options)`: Fetches products with server-side pagination, sorting, and filtering
 - Supports sorting by SKU, price, discount, title, and brand
-- Implements full-text search across SKU, title, brand, and description
+- Implements server-side search by product name (title) only - filtering happens at the database level, not on the client
 - Uses Drizzle ORM for type-safe database queries
 - Returns `PaginatedProducts` with metadata (page, limit, total, totalPages)
 
@@ -190,8 +190,9 @@ CREATE TABLE raw_llm_extraction (
 
 **Main Page** (`app/page.tsx`):
 - Client-side React component with state management
-- Fetches data from API route
-- Implements search and sort functionality
+- Fetches data from API route with search query parameters
+- Search is handled server-side (sends search query to API, does not filter client-side)
+- Implements sort functionality (also server-side)
 - Uses shadcn/ui components (Table, Card, Badge, Input, Button)
 
 **UI Components** (`components/ui/`):
@@ -206,19 +207,19 @@ CREATE TABLE raw_llm_extraction (
 
 3. **SKU Requirements**: Only products with a SKU (either in `specs.sku` or `mpn` field) are displayed.
 
-4. **Search Scope**: Search functionality matches against:
-   - SKU (from `raw_data.sku` or `specs.sku`)
-   - Product title (from `raw_data.title`)
-   - Product description (from `raw_data.text`)
-   - Brand name (from `raw_data.brand`)
+4. **Search Scope**: Search functionality matches against product name (title) only, filtering products by the `raw_data.title` field. **Search is server-side only** - the search query is sent to the API endpoint and the database filters the results before returning them. No client-side filtering is performed on the returned data.
 
-5. **Discount Calculation**: Discount percentage is calculated only when both `offerPrice` and `regularPrice` exist, and `regularPrice` is greater than `offerPrice`.
+5. **Product Grouping**: Products are grouped and collapsed together based on:
+   - SKU/MPN (from `raw_data.sku`, `specs.sku`, or `raw_data.mpn`) when available
+   - Product name (from `raw_data.title`) when SKU/MPN is not available
 
-6. **Domain Extraction**: Source domain is extracted from the `source_url` field by parsing the URL hostname, with `www.` prefix removed for cleaner display.
+6. **Discount Calculation**: Discount percentage is calculated only when both `offerPrice` and `regularPrice` exist, and `regularPrice` is greater than `offerPrice`.
 
-7. **Product Name Fallback**: If `raw_data.title` is missing, falls back to `raw_data.text`, then displays "Untitled Product" as a last resort.
+7. **Domain Extraction**: Source domain is extracted from the `source_url` field by parsing the URL hostname, with `www.` prefix removed for cleaner display.
 
-8. **Flexible Field Types**: Many fields in `raw_data` can be either strings or objects with `{raw, display}` structure. The application handles both formats gracefully.
+8. **Product Name Fallback**: If `raw_data.title` is missing, falls back to `raw_data.text`, then displays "Untitled Product" as a last resort.
+
+9. **Flexible Field Types**: Many fields in `raw_data` can be either strings or objects with `{raw, display}` structure. The application handles both formats gracefully.
 
 ## What Would Be Improved With More Time
 
