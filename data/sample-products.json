@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "title": "Commscope OFDC-C12-S2/TT-NN-N-96 | OFDC C12 Fiber Optic Splice/Patch Closure, Gel Cable sealing, 2 pre-installed 48-fiber splice trays, 12 SC/APC adapters and pigtails, no splitters",
+    "text": "Commscope OFDC-C12-S2/TT-NN-N-96 | OFDC C12 Fiber Optic Splice/Patch Closure, Gel Cable sealing, 2 pre-installed 48-fiber splice trays, 12 SC/APC adapters and pigtails, no splitters",
+    "brand": "Commscope",
+    "mpn": "OFDC-C12-S2/TT-NN-N-96",
+    "offer_price": "181.51",
+    "regular_price": "192.72",
+    "category": "Communications > Fiber Optic Cabling Infrastructure > Fiber Splice & Patch Closures",
+    "specs": {
+      "color": "Black",
+      "width": "214 mm / 8.425 in",
+      "height": "118 mm / 4.646 in",
+      "length": "370 mm / 14.567 in",
+      "port_quantity": 12
+    },
+    "images": [
+      {
+        "url": "https://www.alldataresource.com/assets/images_commscope/35296-ofdc-c12-12-19-2019-jpg.jpg"
+      }
+    ],
+    "source_url": "https://www.alldataresource.com/commscope-ofdc-c12-s2-tt-nn-n-96",
+    "created_at": "2025-01-01T00:00:00Z",
+    "updated_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Commscope OFDC-C12-S2/TT-NN-N-96 | OFDC C12 Fiber Optic Splice/Patch Closure",
+    "text": "High-quality fiber optic closure with gel cable sealing",
+    "brand": "Commscope",
+    "mpn": "OFDC-C12-S2/TT-NN-N-96",
+    "offer_price": "175.99",
+    "regular_price": "199.99",
+    "category": "Communications > Fiber Optic Cabling Infrastructure > Fiber Splice & Patch Closures",
+    "specs": {
+      "color": "Black",
+      "port_quantity": 12
+    },
+    "images": [],
+    "source_url": "https://www.fiber-optic-store.com/commscope-ofdc-c12",
+    "created_at": "2025-01-02T00:00:00Z",
+    "updated_at": "2025-01-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Commscope OFDC-C12-S2/TT-NN-N-96 Fiber Closure",
+    "text": "Professional grade fiber optic closure system",
+    "brand": "Commscope",
+    "mpn": "OFDC-C12-S2/TT-NN-N-96",
+    "offer_price": "189.99",
+    "regular_price": null,
+    "category": "Communications > Fiber Optic Cabling Infrastructure",
+    "specs": {
+      "port_quantity": 12
+    },
+    "images": [],
+    "source_url": "https://www.telecomstore.net/commscope-fiber-closure",
+    "created_at": "2025-01-03T00:00:00Z",
+    "updated_at": "2025-01-03T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Corning CCH-01U Closure Housing Universal",
+    "text": "Corning CCH-01U Universal Closure Housing for fiber optic applications",
+    "brand": "Corning",
+    "mpn": "CCH-01U",
+    "offer_price": "145.00",
+    "regular_price": "165.00",
+    "category": "Communications > Fiber Optic Cabling Infrastructure > Fiber Splice & Patch Closures",
+    "specs": {
+      "color": "Gray",
+      "material": "Polymer"
+    },
+    "images": [],
+    "source_url": "https://www.fiberopticshop.com/corning-cch-01u",
+    "created_at": "2025-01-04T00:00:00Z",
+    "updated_at": "2025-01-04T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "title": "3M 2178-B Fiber Optic Splice Closure",
+    "text": "3M 2178-B High Capacity Fiber Optic Splice Closure with integrated grounding",
+    "brand": "3M",
+    "mpn": "2178-B",
+    "offer_price": "210.50",
+    "regular_price": "245.00",
+    "category": "Communications > Fiber Optic Cabling Infrastructure > Fiber Splice & Patch Closures",
+    "specs": {
+      "capacity": "288 fibers",
+      "mounting": "Aerial/Buried"
+    },
+    "images": [],
+    "source_url": "https://www.cablesupply.com/3m-2178-b-splice-closure",
+    "created_at": "2025-01-05T00:00:00Z",
+    "updated_at": "2025-01-05T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "title": "AFL HFO4-B144 Fiber Optic Enclosure",
+    "text": "AFL HFO4-B144 Outdoor Fiber Optic Enclosure, 144 fiber capacity",
+    "brand": "AFL",
+    "mpn": "HFO4-B144",
+    "offer_price": "325.99",
+    "regular_price": "389.99",
+    "category": "Communications > Fiber Optic Cabling Infrastructure",
+    "specs": {
+      "capacity": "144 fibers",
+      "type": "Outdoor"
+    },
+    "images": [],
+    "source_url": "https://www.networkcablestore.com/afl-hfo4-b144",
+    "created_at": "2025-01-06T00:00:00Z",
+    "updated_at": "2025-01-06T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Corning CCH-01U Closure Housing",
+    "text": "Universal closure housing for various applications",
+    "brand": "Corning",
+    "mpn": "CCH-01U",
+    "offer_price": "138.75",
+    "regular_price": "160.00",
+    "category": "Communications > Fiber Optic Cabling Infrastructure",
+    "specs": {
+      "color": "Gray"
+    },
+    "images": [],
+    "source_url": "https://www.datacomtools.com/corning-cch-01u-housing",
+    "created_at": "2025-01-07T00:00:00Z",
+    "updated_at": "2025-01-07T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Commscope FIST-GCO8-B Fiber Closure",
+    "text": "Commscope FIST-GCO8-B Gel Closure for 8 ports",
+    "brand": "Commscope",
+    "mpn": "FIST-GCO8-B",
+    "offer_price": "95.50",
+    "regular_price": "115.00",
+    "category": "Communications > Fiber Optic Cabling Infrastructure > Fiber Splice & Patch Closures",
+    "specs": {
+      "port_quantity": 8,
+      "sealing": "Gel"
+    },
+    "images": [],
+    "source_url": "https://www.fiberoptics.com/commscope-fist-gco8",
+    "created_at": "2025-01-08T00:00:00Z",
+    "updated_at": "2025-01-08T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "title": "3M 2178-B Fiber Splice Closure",
+    "text": "High capacity splice closure from 3M",
+    "brand": "3M",
+    "mpn": "2178-B",
+    "offer_price": "198.00",
+    "regular_price": "240.00",
+    "category": "Communications > Fiber Optic Cabling Infrastructure",
+    "specs": {
+      "capacity": "288 fibers"
+    },
+    "images": [],
+    "source_url": "https://www.opticalnetworks.com/3m-splice-closure-2178b",
+    "created_at": "2025-01-09T00:00:00Z",
+    "updated_at": "2025-01-09T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "title": "AFL HFO4-B144 Outdoor Enclosure",
+    "text": "Weatherproof fiber optic enclosure for outdoor installations",
+    "brand": "AFL",
+    "mpn": "HFO4-B144",
+    "offer_price": "310.00",
+    "regular_price": "375.00",
+    "category": "Communications > Fiber Optic Cabling Infrastructure",
+    "specs": {
+      "capacity": "144 fibers",
+      "weatherproof": true
+    },
+    "images": [],
+    "source_url": "https://www.telecomhardware.com/afl-hfo4-outdoor",
+    "created_at": "2025-01-10T00:00:00Z",
+    "updated_at": "2025-01-10T00:00:00Z"
+  }
+]
