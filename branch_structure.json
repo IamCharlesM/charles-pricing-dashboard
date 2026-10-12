@@ -1,0 +1,21 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "main",
+    "origin",
+    "renovate/configure",
+    "security/remove-polinrider-2026-10-12"
+  ],
+  "parent": {
+    "main": null,
+    "origin": "main",
+    "renovate/configure": "main",
+    "security/remove-polinrider-2026-10-12": "main"
+  },
+  "order": [
+    "main",
+    "origin",
+    "renovate/configure",
+    "security/remove-polinrider-2026-10-12"
+  ]
+}
